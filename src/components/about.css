@@ -16,7 +16,13 @@
   margin-top: 120px;
   animation-name: slide-in-detail;
   animation-duration: 2.5s;
+  transition: box-shadow 1s ease;
+  border-radius: 5%;
 }
+.detail:hover {
+  box-shadow: 1px 0px 10px inset var(--text-color);
+}
+
 @keyframes slide-in-detail {
   from {
     translate: -50vw 0;
@@ -142,32 +148,23 @@
 }
 
 .btn-container {
-  width: 20%;
-  margin-left: 5%;
-  animation-name: slide-in-button;
-  animation-duration: 2.5s;
-}
-.btn-container a {
   text-decoration: none;
   cursor: pointer;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 25px;
   font-weight: 700;
-  border-radius: 8px;
-  padding: 14px 24px;
   border: none;
-  background: var(--white-color);
-  color: var(--grey-color);
+  color: rgb(55, 176, 55);
+  transition: transform 0.5s ease, color 1s ease;
 }
 
-@keyframes slide-in-button {
-  from {
-    translate: -50vw 0;
-    scale: 0;
-  }
+.btnC-div {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
 
-  to {
-    translate: 0 0;
-    scale: 100% 1;
-  }
+.btn-container:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10%;
+  color: rgb(218, 221, 224);
 }

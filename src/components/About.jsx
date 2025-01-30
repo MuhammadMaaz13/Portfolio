@@ -20,14 +20,16 @@ const About = () => {
                 React, HTML, CSS, and customizing WordPress sites
               </span>
               .
+              <div className="btnC-div">
+                <a href="#footer" className="btn-container">
+                  Contact Me
+                </a>
+              </div>
             </div>
           </div>
           <div className="image">
             <img src={myPic2} alt="image-here" />
           </div>
-        </div>
-        <div className="btn-container">
-          <a href="#footer">Contact Me</a>
         </div>
       </div>
     </>
