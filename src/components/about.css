@@ -130,11 +130,11 @@
     border-radius: 30%;
   }
   .description {
-    padding-left: 20px;
+    padding: 8px;
     padding-bottom: 20px;
     font-size: medium;
     line-height: normal;
-    width: 90%;
+    width: 95%;
   }
 }
 

@@ -53,7 +53,7 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa fa-envelope"></i> Email
+                  <i className="fa fa-envelope"></i> E-mail
                 </a>
               </div>
             </div>

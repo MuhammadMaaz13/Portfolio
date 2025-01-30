@@ -1,9 +1,6 @@
 :root {
   font-family: system-ui, Helvetica, Arial, sans-serif;
-  background-image: url(/v796-nunny-02.jpg);
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
+
   --white-color: #bdc8cd;
   --grey-color: #001027;
   --black-color: rgb(7, 6, 6);
@@ -11,6 +8,10 @@
 }
 
 body {
+  background-image: url(/v796-nunny-02.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 0;
   margin: 0;
   display: flex;
