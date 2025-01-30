@@ -1,0 +1,87 @@
+.header {
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.main {
+  padding-top: 30px;
+  width: 95%;
+  margin: 75px auto;
+}
+
+.APP_DIV {
+  width: 100%;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #4e586a2a; /* Dark background */
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 2rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 70px;
+  border-radius: 10px;
+}
+
+.footer .footer-content {
+  margin: auto;
+  max-width: 1400px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer p {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer .social-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: #808080; /* Change color on hover */
+}
+
+.footer .social-links i {
+  margin-right: 8px;
+}
+
+.footer .social-links a:first-child {
+  margin-left: 0; /* Remove left margin for first child */
+}
+
+/* Optional: Small Screen Adjustment */
+@media (max-width: 768px) {
+  .footer p {
+    font-size: 0.8rem;
+  }
+
+  .footer .social-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer .social-links a {
+    font-size: 1rem;
+  }
+}

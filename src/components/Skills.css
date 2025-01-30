@@ -1,0 +1,96 @@
+.skills-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  padding: 1.2rem;
+}
+
+.skills-header {
+  padding: 1.2rem;
+  border-radius: 10px;
+  background-color: var(--text-color);
+  color: var(--grey-color);
+  font-size: 20px;
+  font-weight: 700;
+  width: 40%;
+  text-align: center;
+}
+
+.svg-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.svg-detail {
+  text-align: center;
+  background-color: #d2dbdf;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+.svg-detail:hover {
+  transform: scale(1.1);
+}
+.svg-container {
+  padding: 0.423rem;
+}
+.svg-grid .svg-detail:nth-child(4) .svg-container {
+  background-color: rgb(28, 25, 25);
+  border-radius: 8px;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+.svg-grid .svg-detail:nth-child(4) {
+  border-radius: 8px;
+  background-color: transparent;
+}
+.svg-grid .svg-detail:nth-child(4) .name-container {
+  border-radius: 8px;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-top: 1px solid #5e686d;
+  background-color: #d2dbdf;
+}
+
+.name-container {
+  border-top: 1px solid #5e686d;
+  color: #5e686d;
+  padding: 0.423rem;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .svg-grid {
+    grid-template-columns: repeat(
+      5,
+      1fr
+    ); /* For larger tablets, use 5 columns */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .svg-grid {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* For medium screens, use 3 columns */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .svg-grid {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* For smaller screens, use 2 columns */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .svg-grid {
+    grid-template-columns: 1fr; /* For very small screens, stack the items */
+  }
+}

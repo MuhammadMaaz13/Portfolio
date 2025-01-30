@@ -1,0 +1,108 @@
+.main-edu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 95%;
+  padding: 19.2px;
+}
+
+.edu-header {
+  padding: 1.2rem;
+  border-radius: 10px;
+  background-color: var(--text-color);
+  color: var(--grey-color);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  width: 50%;
+  text-align: center;
+}
+
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 30px;
+}
+
+.edu-main {
+  background-color: #d2dbdf;
+  border-radius: 8px;
+  color: #5e686d;
+  transition: transform 0.5s ease;
+}
+
+.edu-main:hover {
+  transform: scale(1.1);
+}
+
+.edu-level {
+  text-align: center;
+  border-bottom: 1px solid #5e686d;
+  padding: 0.546rem;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.edu-detail {
+  height: 75px;
+  padding: 0.546rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edu-svg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.edu-in {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px;
+}
+.edu-date {
+  border-radius: 3px;
+  color: #d2dbdf;
+  padding: 0.2rem;
+  margin-right: 12px;
+  font-size: 12px;
+  background-color: #5e686d;
+}
+
+@media (max-width: 767px) and (min-width: 480px) {
+  .edu-grid {
+    grid-template-columns: 1fr; /* 1 column */
+    gap: 20px; /* Smaller gap */
+  }
+  .edu-level {
+    font-size: 14px; /* Smaller font for better readability on smaller screens */
+  }
+  .edu-in {
+    font-size: 14px; /* Smaller font */
+  }
+  .edu-date {
+    font-size: 12px; /* Smaller font */
+  }
+}
+
+/* For screens below 480px (Small Phones) */
+@media (max-width: 479px) {
+  .edu-grid {
+    grid-template-columns: 1fr; /* 1 column */
+    gap: 15px; /* Even smaller gap */
+  }
+  .edu-level {
+    font-size: 12px; /* Much smaller font */
+  }
+  .edu-in {
+    font-size: 12px; /* Much smaller font */
+  }
+  .edu-date {
+    font-size: 10px; /* Much smaller font */
+  }
+}
